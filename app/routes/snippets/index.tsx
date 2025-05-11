@@ -18,10 +18,11 @@ export default function Snippets() {
     <div>
       <h1>Snippets</h1>
       <h2>Fetch snippets</h2>
-      <p className="mb-2">Snippets</p>
-      {snippets.map((snippet: any) => {
-        return <Snippet snippet={snippet} />;
-      })}
+      <div style={{ padding: "1rem" }}>
+        {snippets.map((snippet: any) => {
+          return <Snippet snippet={snippet} />;
+        })}
+      </div>
     </div>
   );
 }
