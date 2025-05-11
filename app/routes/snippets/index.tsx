@@ -16,8 +16,7 @@ export default function Snippets() {
   let { snippets } = useLoaderData();
   return (
     <div>
-      <h1>Snippets</h1>
-      <h2>Fetch snippets</h2>
+      <h1>Snippets : </h1>
       <div style={{ padding: "1rem" }}>
         {snippets.map((snippet: any) => {
           return <Snippet snippet={snippet} />;

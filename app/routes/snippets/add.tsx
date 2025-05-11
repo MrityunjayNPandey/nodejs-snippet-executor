@@ -22,18 +22,23 @@ export default function Index() {
     <div>
       <h2>Add a snippet</h2>
       <Form method="POST" action="/snippets/add">
-        <input
-          type="text"
-          name="snippet_name"
-          placeholder="enter your code snippet name"
-          className="w-full p-2 border rounded"
-        />
-        <textarea
-          name="code_snippet"
-          placeholder="enter your code snippet"
-          rows={10}
-          className="w-full p-2 border rounded"
-        />
+        <div style={{ padding: 2 }}>
+          <input
+            type="text"
+            name="snippet_name"
+            placeholder="enter your code snippet name"
+            className="w-full p-2 border rounded"
+          />
+        </div>
+        <div style={{ padding: 2 }}>
+          <textarea
+            name="code_snippet"
+            placeholder="enter your code snippet"
+            rows={10}
+            className="w-full p-2 border rounded"
+          />
+        </div>
+
         <button type="submit">Submit</button>
       </Form>
     </div>
