@@ -73,7 +73,7 @@ function Document({ children, title }: iDocType) {
       <head>
         <Meta />
         <Links />
-        <title>{title ? title : "MongoDB Remix Template"}</title>
+        <title>{title ? title : "NodeJS Snippet Executor"}</title>
       </head>
       <body>
         {children}
