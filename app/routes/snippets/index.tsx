@@ -12,9 +12,8 @@ export async function loader({ request }: LoaderArgs) {
   return json({ snippets });
 }
 
-export default function Movies() {
+export default function Snippets() {
   let { snippets } = useLoaderData();
-  console.log("🚀 ~ Movies ~ snippets:", snippets);
   return (
     <div>
       <h1>Snippets</h1>
